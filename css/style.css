@@ -530,6 +530,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   text-align: center;
   line-height: 64px;
   margin-bottom: 45px;
+  opacity: 0!important;
 }
 .calc-download-button span {
   display: inline-block;
