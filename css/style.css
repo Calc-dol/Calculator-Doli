@@ -623,7 +623,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   .calc-download-btn {
     min-width: 278px;
     top: 90px;
-    right: 59%;
+    right: 56%;
   }
   .calc-download-btn span {
     font-size: 16px;
