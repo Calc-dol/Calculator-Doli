@@ -596,7 +596,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  color: #FFFFFF;
+  color: #B49378;
   text-align: center;
   line-height: 64px;
 }
@@ -606,7 +606,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   border: 1px solid #B49378;
-  color: #B49378;
+  color: #FFFFFF;
 }
 @media (max-width: 1346px) {
   .calc-download-btn {
