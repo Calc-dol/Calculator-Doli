@@ -474,7 +474,7 @@ input.calc-inp-matriza{
 	min-width: 290px;
 	height: 64px;
 	border: 1px solid #B49378;
-	background: #B49378;
+	background: #ffffff;
 	border-radius: 40px;
 	font-family: 'HK Grotesk', sans-serif!important;
 	font-weight: 400;
@@ -488,6 +488,7 @@ input.calc-inp-matriza{
 		background-color: transparent;
 		transition: all 0.3s ease 0s;
 		border: 1px solid #B49378;
+		background: #B49378;
 		color: #B49378;
 	}
 	@media (max-width: 1346px) {
