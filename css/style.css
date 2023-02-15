@@ -283,7 +283,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
           flex: 0 1 25%;
   position: relative;
   top: -200px;
-  left: 730px;
+  left: 530px;
 }
 @media (max-width: 1346px) {
   .calc-container-column_header {
@@ -299,7 +299,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   }
   .calc-container-column_buttons {
     top: -220px;
-    left: 480px;
+    left: 360px;
   }
 }
 @media (max-width: 992px) {
@@ -579,8 +579,8 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
 
 .calc-download-btn {
   position: absolute;
-  top: 90px;
-  right: 50%;
+  top: 0px;
+  right: -48%;
   -webkit-transform: translate(50%, 0);
       -ms-transform: translate(50%, 0);
           transform: translate(50%, 0);
@@ -608,15 +608,22 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   border: 1px solid #B49378;
   color: #FFFFFF;
 }
+
 @media (max-width: 1346px) {
   .calc-download-btn {
     margin: 0px 0px 0px 0px;
+    min-width: 215px;
+    right: -30%;
+  }
+  .calc-download-btn span {
+    font-size: 16px;
   }
 }
 @media (max-width: 992px) {
   .calc-download-btn {
     min-width: 278px;
-    right: 55%;
+    top: 90px;
+    right: 59%;
   }
   .calc-download-btn span {
     font-size: 16px;
