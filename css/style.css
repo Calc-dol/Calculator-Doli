@@ -608,15 +608,14 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   border: 1px solid #B49378;
   color: #FFFFFF;
 }
-
+.calc-download-btn span {
+  font-weight: 500;
+}
 @media (max-width: 1346px) {
   .calc-download-btn {
     margin: 0px 0px 0px 0px;
     min-width: 215px;
     right: -30%;
-  }
-  .calc-download-btn span {
-    font-size: 16px;
   }
 }
 @media (max-width: 992px) {
@@ -624,9 +623,6 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
     min-width: 278px;
     top: 90px;
     right: 56%;
-  }
-  .calc-download-btn span {
-    font-size: 16px;
   }
 }
 @media (max-width: 767px) {
