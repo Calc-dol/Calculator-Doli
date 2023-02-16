@@ -1214,33 +1214,43 @@ ul li {
   display: inline-block;
   border-radius: 50%;
   background: #ffffff;
-  -webkit-box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.3);
   width: 60px;
   height: 60px;
 }
 @media (max-width: 992px) {
   .swiper button {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 768px) {
   .swiper button {
     width: 50px;
     height: 50px;
   }
 }
+@media (max-width: 450px) {
+  .swiper button {
+    width: 45px;
+    height: 45px;
+  }
+}
 
 .swiper .swiper-button-prev::after,
 .swiper .swiper-button-next::after {
-  font-size: 40px;
+  font-size: 32px;
   color: #000;
+}
+@media (max-width: 768px) {
+  .swiper .swiper-button-prev::after,
+  .swiper .swiper-button-next::after {
+    font-size: 25px;
+  }
 }
 @media (max-width: 425px) {
   .swiper .swiper-button-prev::after,
   .swiper .swiper-button-next::after {
-    font-size: 30px;
+    font-size: 22px;
   }
 }
 
@@ -1268,7 +1278,7 @@ ul li {
 @media (max-width: 450px) {
   .swiper .swiper-button-prev,
   .swiper .swiper-button-next {
-    top: 56%;
+    top: 59%;
   }
 }
 
@@ -1277,9 +1287,9 @@ ul li {
     left: 15px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .swiper .swiper-button-prev {
-    left: 5px;
+    left: 7px;
   }
 }
 
@@ -1288,9 +1298,9 @@ ul li {
     right: 15px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 450px) {
   .swiper .swiper-button-next {
-    right: 5px;
+    right: 7px;
   }
 }
 
