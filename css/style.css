@@ -299,7 +299,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   }
   .calc-container-column_buttons {
     top: -220px;
-    left: 360px;
+    left: 395px;
   }
 }
 @media (max-width: 992px) {
@@ -340,7 +340,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   .calc-container-column_buttons {
     position: relative;
     top: -180px;
-    left: 360px;
+    left: 350px;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
@@ -532,12 +532,10 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   text-align: center;
   line-height: 64px;
   margin-bottom: 45px;
-  opacity: 0!important;
 }
 .calc-download-button span {
   display: inline-block;
-  font-family: "Times New Roman" !important;
-  font-style: italic;
+  font-family: 'HK Grotesk', sans-serif!important;
   font-weight: 400;
   font-size: 18px;
   color: #FFFFFF;
@@ -555,9 +553,23 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   color: #B49378;
   background: url("../images/Union-braun.svg") right no-repeat;
 }
+@media (max-width: 1346px) {
+  .calc-download-button {
+    min-width: 320px;
+  }
+  .calc-download-button span {
+    font-size: 16px;
+    padding-right: 30px;
+    background: url('../images/Union.svg') 100% 47% no-repeat;
+  }
+  .calc-download-button:hover span {
+  color: #B49378;
+  background: url("../images/Union-braun.svg") 100% 47% no-repeat;
+}
+}
 @media (max-width: 992px) {
   .calc-download-button {
-    min-width: 278px;
+    min-width: 330px;
     margin-right: 55px;
     margin-left: 15px;
   }
@@ -616,14 +628,15 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   .calc-download-btn {
     margin: 0px 0px 0px 0px;
     min-width: 215px;
-    right: -30%;
+    right: -40%;
+    font-size: 16px;
   }
 }
 @media (max-width: 992px) {
   .calc-download-btn {
-    min-width: 278px;
+    min-width: 330px;
     top: 90px;
-    right: 56%;
+    right: 55%;
   }
 }
 @media (max-width: 767px) {
