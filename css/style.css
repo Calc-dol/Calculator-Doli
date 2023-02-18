@@ -387,7 +387,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   .calc-container-column_buttons {
     position: relative;
     top: 30px;
-    left: 20px;
+    left:33px;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
@@ -434,7 +434,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   .calc-container-column_buttons {
     position: relative;
     top: 30px;
-    left: 20px;
+    left: -10px;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
@@ -481,7 +481,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   .calc-container-column_buttons {
     position: relative;
     top: 25px;
-    left: -5px;
+    left: -10px;
     -webkit-box-ordinal-group: 5;
         -ms-flex-order: 4;
             order: 4;
@@ -560,11 +560,11 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   .calc-download-button span {
     font-size: 16px;
     padding-right: 30px;
-    background: url('../images/Union.svg') 100% 47% no-repeat;
+    background: url('../images/Union.svg') 100% 47%/ 15px 15px no-repeat;
   }
   .calc-download-button:hover span {
   color: #B49378;
-  background: url("../images/Union-braun.svg") 100% 47% no-repeat;
+  background: url("../images/Union-braun.svg") 100% 47%/ 15px 15px no-repeat;
 }
 }
 @media (max-width: 992px) {
@@ -575,6 +575,11 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   }
   .calc-download-button span {
     font-size: 16px;
+    padding-right: 30px;
+    background: url("../images/Union.svg") 100% 47%/17px 17px no-repeat;
+  }
+  .calc-download-button:hover span {
+    background: url("../images/Union-braun.svg") 100% 47%/17px 17px no-repeat;
   }
 }
 @media (max-width: 767px) {
@@ -586,6 +591,11 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   .calc-download-button span {
     padding-right: 30px;
     font-size: 15px;
+  }
+}
+@media (max-width: 359px) {
+  .calc-download-button {
+    min-width: 290px;
   }
 }
 
@@ -641,14 +651,19 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
 }
 @media (max-width: 767px) {
   .calc-download-btn {
-    right: 48%;
+    right: 52%;
     top: 77px;
   }
 }
 @media (max-width: 450px) {
   .calc-download-btn {
     font-size: 16px;
-    right: 47%;
+    right: 48%;
+  }
+}
+@media (max-width: 359px) {
+  .calc-download-btn {
+    min-width: 290px;
   }
 }
 
