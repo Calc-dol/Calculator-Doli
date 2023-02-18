@@ -599,6 +599,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   color: #B49378;
   text-align: center;
   line-height: 64px;
+  cursor: pointer;
 }
 .calc-download-btn:hover {
   background: #B49378;
