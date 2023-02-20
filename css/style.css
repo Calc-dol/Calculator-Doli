@@ -82,6 +82,11 @@
   align-items: center;
 }
 
+[contentEditable=false]:empty::after {
+  content: attr(data-text);
+  color: hwb(0 45% 55%);
+}
+
 .calc-otp-table-header .table-area,
 .calc-otp-table-footer .table-area {
   display: -webkit-box;
