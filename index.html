@@ -1087,6 +1087,30 @@
 								alterClass();
 							});
 						</script>
+						<script>
+							const input = document.getElementById('calc-matriza-bd');
+							const div = document.getElementById('calc-matriza-vz');				
+							const maxDigits = 10;
+							input.addEventListener('input', () => {
+							  // Проверить количество цифр в input
+							  const digitCount = input.value.replace(/[^0-9]/g, '').length;						
+							  // Если количество цифр меньше максимального или input пустой, вывести текст в div
+							  if (digitCount < maxDigits || input.value === '') {
+								div.textContent = '';
+							  } else {
+							  }
+							});
+							// Обработчик события ввода
+							input.addEventListener('input', () => {
+							  // Проверить содержимое input на наличие цифр
+							  const hasNumbers = /\d/.test(input.value);
+							  // Если в input нет цифр, очистить содержимое div
+							  if (!hasNumbers) {
+								div.textContent = '';
+							  }
+							});
+							// Максимальное количество цифр в input
+						</script>
 						<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 						<script>
 							new Swiper('.swiper', {
