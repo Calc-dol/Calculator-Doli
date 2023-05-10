@@ -61,7 +61,8 @@
 	<script src="js/tilda-zero-1.1.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
 	<script src="js/tilda-zero-scale-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
 	<script src="js/tilda-events-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+	<script language="javascript" type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 	<script type="text/javascript">window.dataLayer = window.dataLayer || [];</script>
 	<script type="text/javascript">(function () {
 			if ((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent)) === false && typeof (sessionStorage) != 'undefined' && sessionStorage.getItem('visited') !== 'y' && document.visibilityState) {
@@ -2056,17 +2057,16 @@
 										(document.querySelector(".calc-download-btn").onclick = () => {
 
 												html2canvas(document.getElementById("matr1"),{
-													width: 1300,
-													scale: 3,
-													// imageTimeout: 0,
-													windowWidth: 1380
-												}).then(function(canvas) {
-													var my_screen = canvas.toDataURL("image/png");
-													var link = document.createElement("a");
-													link.href = my_screen;
-													link.download = "Розрахунок матриці долі від Юлії Мазніченко.png";
-													link.click();
-												});
+												scale: 1,
+												// imageTimeout: 0,
+											}).then(function(canvas) {
+												// var link = document.createElement("a");
+												var w = document.getElementById("matr1").offsetWidth;
+												var h = document.getElementById("matr1").offsetHeight;
+												var doc = new jsPDF('p', 'pt',[w,h]);
+												doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,w,h);
+												doc.save('Розрахунок матриці долі від Юлії Мазніченко.pdf');
+											});
 										}),
 										(document.querySelector("#point-2").textContent = 0),
 										(document.querySelector("#point-1").textContent = 0),
