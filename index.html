@@ -89,7 +89,7 @@
 
 <body class="t-body"
 	style="margin:0;overflow-x: hidden;-webkit-tap-highlight-color: transparent !important;outline: none !important;">
-<div id="matr1">
+<div>
 	<!--allrecords-->
 	<div id="allrecords" class="t-records t-records_animated t-records_visible"
 		data-hook="blocks-collection-content-node" data-tilda-project-id="5162013" data-tilda-page-id="26801721"
@@ -107,7 +107,7 @@
 			<div class="t123">
 				<div class="t-container_100 ">
 					<div class="t-width t-width_100 padtb ">
-						<div class="calc-container">
+						<div class="calc-container" id="matr1">
 							<div class="calc-container-column_title">
 								Персональний розрахунок
 							</div>
@@ -963,7 +963,7 @@
 
 								</div>
 								<div class="calc-container-column calc-container-column_buttons">
-									<div class="calc-inps-buttons">
+									<div class="calc-inps-buttons" data-html2canvas-ignore="true">
 										<div class="calc-download-button">
 											<a href="#cta" class="scrollbtn"><span>ЗАМОВИТИ РОЗБІР МАТРИЦІ</span></a>
 										</div>
@@ -2056,15 +2056,19 @@
 										q();
 								}),
 										(document.querySelector(".calc-download-btn").onclick = () => {
-
+											var w = document.getElementById("matr1").offsetWidth;
+											var h = document.getElementById("matr1").offsetHeight;
 												html2canvas(document.getElementById("matr1"),{
-												scale: 1,
+												// scale: 1,
+													width: w,
+													windowWidth: 1920,
+
 												// imageTimeout: 0,
 											}).then(function(canvas) {
 												// var link = document.createElement("a");
 												var w = document.getElementById("matr1").offsetWidth;
 												var h = document.getElementById("matr1").offsetHeight;
-												var doc = new jsPDF('p', 'pt',[w,h]);
+												var doc = new jsPDF('l', 'px',[w,h]);
 												doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,w,h);
 												doc.save('Розрахунок матриці долі від Юлії Мазніченко.pdf');
 											});
