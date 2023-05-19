@@ -89,7 +89,7 @@
 
 <body class="t-body"
 	style="margin:0;overflow-x: hidden;-webkit-tap-highlight-color: transparent !important;outline: none !important;">
-<div>
+<div id="matr1">
 	<!--allrecords-->
 	<div id="allrecords" class="t-records t-records_animated t-records_visible"
 		data-hook="blocks-collection-content-node" data-tilda-project-id="5162013" data-tilda-page-id="26801721"
@@ -107,7 +107,7 @@
 			<div class="t123">
 				<div class="t-container_100 ">
 					<div class="t-width t-width_100 padtb ">
-						<div class="calc-container" id="matr1">
+						<div class="calc-container" >
 							<div class="calc-container-column_title">
 								Персональний розрахунок
 							</div>
@@ -954,11 +954,12 @@
 													</g>
 												</g>
 											</svg>
+											<div class="calc-matriza-circles-d">
+												<div id="circle_d2" class="circle-d circle-d_d2"></div>
+												<div id="circle_d3" class="circle-d circle-d_d3"></div>
+											</div>
 										</div>
-										<div class="calc-matriza-circles-d">
-											<div id="circle_d2" class="circle-d circle-d_d2"></div>
-											<div id="circle_d3" class="circle-d circle-d_d3"></div>
-										</div>
+
 									</div>
 
 								</div>
@@ -972,9 +973,9 @@
 								</div>
 							</div>
 							<!-- Оболонка слайдера -->
-							<div class="calc-container__slider swiper">
-								<div class="calc-container__wrapper swiper-wrapper">
-									<div class="calc-container__slide cards swiper-slide">
+							<div class="calc-container__slider ">
+								<div class="calc-container__wrapper ">
+									<div class="calc-container__slide cards ">
 										<div class="cards__card-title">
 											<div class="cards__title">Пошук себе</div>
 											<div class="cards__subtitle">З'єднання чоловічого і жіночого. Вибудовування взаємин.
@@ -1059,8 +1060,8 @@
 										</div>
 									</div>
 								</div>
-								<button type="button" class="addbuttonp swiper-button-prev"></button>
-								<button type="button" class="addbuttonn swiper-button-next"></button>
+<!--								<button type="button" class="addbuttonp swiper-button-prev"></button>-->
+<!--								<button type="button" class="addbuttonn swiper-button-next"></button>-->
 							</div>
 						</div>
 						<script src="js/jquery.min.js" type="text/javascript"></script>
@@ -1071,17 +1072,17 @@
 								var alterClass = function () {
 									var ww = document.body.clientWidth;
 									if (ww < 1347) {
-										$('.calc-container__slider').addClass('swiper');
-										$('.calc-container__wrapper').addClass('swiper-wrapper');
-										$('.addbuttonp').addClass('swiper-button-prev');
-										$('.addbuttonn').addClass('swiper-button-next');
-										$('.calc-container__slide').addClass('swiper-slide');
+										// $('.calc-container__slider').addClass('swiper');
+										// $('.calc-container__wrapper').addClass('swiper-wrapper');
+										// $('.addbuttonp').addClass('swiper-button-prev');
+										// $('.addbuttonn').addClass('swiper-button-next');
+										// $('.calc-container__slide').addClass('swiper-slide');
 									} else if (ww >= 1347) {
-										$('.calc-container__slider').removeClass('swiper');
-										$('.calc-container__wrapper').removeClass('swiper-wrapper');
-										$('.addbuttonp').removeClass('swiper-button-prev');
-										$('.addbuttonn').removeClass('swiper-button-next');
-										$('.calc-container__slide').removeClass('swiper-slide');
+										// $('.calc-container__slider').removeClass('swiper');
+										// $('.calc-container__wrapper').removeClass('swiper-wrapper');
+										// $('.addbuttonp').removeClass('swiper-button-prev');
+										// $('.addbuttonn').removeClass('swiper-button-next');
+										// $('.calc-container__slide').removeClass('swiper-slide');
 									};
 								};
 								$(window).resize(function () {
@@ -1117,35 +1118,35 @@
 						</script>
 						<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 						<script>
-							new Swiper('.swiper', {
-								navigation: {
-									prevEl: '.swiper-button-prev',
-									nextEl: '.swiper-button-next',
-								},
-								speed: 800,
-								slidesPerView: 2,
-								simulateTouch: true,
-								spaceBetween: 30,
-								// Брейкпоінти
-								breakpoints: {
-									280: {
-										slidesPerView: 1,
-										spaceBetween: 20,
-									},
-									426: {
-										slidesPerView: 1,
-										spaceBetween: 20,
-									},
-									767: {
-										slidesPerView: 2,
-										spaceBetween: 20,
-									},
-									993: {
-										slidesPerView: 3,
-										spaceBetween: 30,
-									},
-								},
-							});
+							// new Swiper('.swiper', {
+							// 	navigation: {
+							// 		prevEl: '.swiper-button-prev',
+							// 		nextEl: '.swiper-button-next',
+							// 	},
+							// 	speed: 800,
+							// 	slidesPerView: 2,
+							// 	simulateTouch: true,
+							// 	spaceBetween: 30,
+							// 	// Брейкпоінти
+							// 	breakpoints: {
+							// 		280: {
+							// 			slidesPerView: 1,
+							// 			spaceBetween: 20,
+							// 		},
+							// 		426: {
+							// 			slidesPerView: 1,
+							// 			spaceBetween: 20,
+							// 		},
+							// 		767: {
+							// 			slidesPerView: 2,
+							// 			spaceBetween: 20,
+							// 		},
+							// 		993: {
+							// 			slidesPerView: 3,
+							// 			spaceBetween: 30,
+							// 		},
+							// 	},
+							// });
 						</script>
 					</div>
 				</div>
@@ -2057,23 +2058,23 @@
 								}),
 										(document.querySelector(".calc-download-btn").onclick = () => {
 											var w = document.getElementById("matr1").offsetWidth;
-											var h = document.getElementById("matr1").offsetHeight + 300;
+											var h = document.getElementById("matr1").offsetHeight;
+											console.log(w,h);
 												html2canvas(document.getElementById("matr1"),{
 												// scale: 1,
-													width: w,
-													height: h,
-													windowWidth: 1920,
-
+													width:w,
+													// windowWidth: 1920,
 												// imageTimeout: 0,
 											}).then(function(canvas) {
 												// var link = document.createElement("a");
-												var w = document.getElementById("matr1").offsetWidth;
-												var h = document.getElementById("matr1").offsetHeight + 300;
-												var doc = new jsPDF('l', 'px',[w,h]);
-												doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,w,h);
 													if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())) {
+														alert('hi');
+														var doc = new jsPDF('p', 'px',[1440,1440*h/w]);
+														doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,1440,1440*h/w);
 														window.open(doc.output('bloburl', { filename: 'Розрахунок матриці долі від Юлії Мазніченко.pdf' }))
 													} else {
+														var doc = new jsPDF('l', 'px',[1440,1440*h/w]);
+														doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,1440,1440*h/w);
 														doc.save('Розрахунок матриці долі від Юлії Мазніченко.pdf');
 													}
 

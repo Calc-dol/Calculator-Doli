@@ -680,6 +680,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
 
 .calc-matriza-svg {
   width: 730px;
+  position: relative;
 }
 @media (max-width: 1346px) {
   .calc-matriza-svg {
@@ -1060,20 +1061,24 @@ ul li {
 .calc-container__slider {
   margin-top: 10px;
 }
-@media (max-width: 1346px) {
+@media (max-width: 767px) {
   .calc-container__slider {
-    margin-top: 0px;
+    margin-top: 150px;
   }
 }
 .calc-container__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 .calc-container__slide {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 25%;
-          flex: 0 1 25%;
+  /*-webkit-box-flex: 0;*/
+  /*    -ms-flex: 0 1 23%;*/
+  /*        flex: 0 1 25%;*/
+  width: calc(50% - 32px);
+  max-width: inherit!important;
+  margin-bottom: 15px!important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1081,6 +1086,12 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .calc-container__slide {
+    width: 100%;
+  }
 }
 
 .calc-container__slide.cards {
@@ -1242,7 +1253,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .swiper {
-    margin-top: 95px;
+    margin-top: 135px;
   }
 }
 .swiper .cards {
@@ -1486,8 +1497,8 @@ ul li {
 
 .calc-matriza-circles-d {
   position: absolute;
-  top: 36%;
-  left: 55.5%;
+  top: 46.5%;
+  right: 31.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1495,13 +1506,11 @@ ul li {
 @media (max-width: 1346px) {
   .calc-matriza-circles-d {
     font-size: 12px;
-    top: 28.2%;
   }
 }
 @media (max-width: 992px) {
   .calc-matriza-circles-d {
     top: 46.7%;
-    left: 56.5%;
   }
 }
 @media (max-width: 767px) {
