@@ -2068,7 +2068,6 @@
 											}).then(function(canvas) {
 												// var link = document.createElement("a");
 													if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())) {
-														alert('hi');
 														var doc = new jsPDF('p', 'px',[1440,1440*h/w]);
 														doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,1440,1440*h/w);
 														window.open(doc.output('bloburl', { filename: 'Розрахунок матриці долі від Юлії Мазніченко.pdf' }))
