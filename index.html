@@ -964,9 +964,9 @@
 								</div>
 								<div class="calc-container-column calc-container-column_buttons">
 									<div class="calc-inps-buttons" data-html2canvas-ignore="true">
-										<div class="calc-download-button">
-											<a href="#cta" class="scrollbtn"><span>ЗАМОВИТИ РОЗБІР МАТРИЦІ</span></a>
-										</div>
+<!--										<div class="calc-download-button">-->
+<!--											<a href="#cta" class="scrollbtn"><span>ЗАМОВИТИ РОЗБІР МАТРИЦІ</span></a>-->
+<!--										</div>-->
 										<div class="calc-download-btn calc-hidden">ЗАВАНТАЖИТИ <span class="pdf">РЕЗУЛЬТАТ</span></div>
 									</div>
 								</div>
@@ -2057,17 +2057,18 @@
 								}),
 										(document.querySelector(".calc-download-btn").onclick = () => {
 											var w = document.getElementById("matr1").offsetWidth;
-											var h = document.getElementById("matr1").offsetHeight;
+											var h = document.getElementById("matr1").offsetHeight + 300;
 												html2canvas(document.getElementById("matr1"),{
 												// scale: 1,
 													width: w,
+													height: h,
 													windowWidth: 1920,
 
 												// imageTimeout: 0,
 											}).then(function(canvas) {
 												// var link = document.createElement("a");
 												var w = document.getElementById("matr1").offsetWidth;
-												var h = document.getElementById("matr1").offsetHeight;
+												var h = document.getElementById("matr1").offsetHeight + 300;
 												var doc = new jsPDF('l', 'px',[w,h]);
 												doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,w,h);
 												doc.save('Розрахунок матриці долі від Юлії Мазніченко.pdf');

@@ -538,7 +538,7 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
   transition: all 0.3s ease 0s;
   text-align: center;
   line-height: 64px;
-  margin-bottom: 45px;
+  margin-bottom: 0px;
 }
 .calc-download-button span {
   display: inline-block;
@@ -1058,7 +1058,7 @@ ul li {
 }
 
 .calc-container__slider {
-  margin-top: -60px;
+  margin-top: 10px;
 }
 @media (max-width: 1346px) {
   .calc-container__slider {
