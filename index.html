@@ -2071,7 +2071,12 @@
 												var h = document.getElementById("matr1").offsetHeight + 300;
 												var doc = new jsPDF('l', 'px',[w,h]);
 												doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,w,h);
-												doc.save('Розрахунок матриці долі від Юлії Мазніченко.pdf');
+													if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())) {
+														window.open(doc.output('bloburl', { filename: 'Розрахунок матриці долі від Юлії Мазніченко.pdf' }))
+													} else {
+														doc.save('Розрахунок матриці долі від Юлії Мазніченко.pdf');
+													}
+
 											});
 										}),
 										(document.querySelector("#point-2").textContent = 0),
