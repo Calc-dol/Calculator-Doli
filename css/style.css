@@ -325,6 +325,8 @@ input.calc-inp-matriza:hover, input.calc-inp-matriza:focus {
         -ms-flex-order: 3;
             order: 3;
     margin-top: 30px;
+    flex: 1;
+    width: 100%;
   }
   .calc-container-column_header {
     -webkit-box-flex: 0;
