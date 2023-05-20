@@ -2068,10 +2068,11 @@
 											}).then(function(canvas) {
 												// var link = document.createElement("a");
 													if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())) {
-														alert('he');
-														var doc = new jsPDF('p', 'px',[1440,1440*h/w]);
-														doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,1440,1440*h/w);
-														doc.output('dataurlnewwindow', { filename: 'Розрахунок матриці долі від Юлії Мазніченко.pdf' });
+														// alert('he');
+														// var doc = new jsPDF('p', 'px',[1440,1440*h/w]);
+														// doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,1440,1440*h/w);
+														// doc.output('dataurlnewwindow', { filename: 'Розрахунок матриці долі від Юлії Мазніченко.pdf' });
+														window.print();
 													} else {
 														var doc = new jsPDF('l', 'px',[1440,1440*h/w]);
 														doc.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0,1440,1440*h/w);
